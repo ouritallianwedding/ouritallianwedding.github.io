@@ -3,39 +3,56 @@
     src: url('./fonts/Vanitas-Bold.otf');
 }
 @font-face {
-    font-family: Breathe;
-    src: url('./fonts/BreathePoetry-Regular.otf');
+    font-family: Nova;
+    src: url('./fonts/nova.ttf');
 }
 @font-face {
-    font-family: Gotham;
-    src: url("./fonts/Gotham-Medium.otf");
+    font-family: ProximaNova;
+    src: url("./fonts/Proxima-Nova-medium.ttf");
 }
 @font-face {
-    font-family: Eaves;
-    src: url("./fonts/MrsEavesRoman-Regular.ttf");
+    font-family: EBGaramond;
+    src: url("./fonts/EBGaramond-Regular.ttf");
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-size: 14px;
-    font-family: Eaves, sans-serif;
+    font-family: EBGaramond, sans-serif;
     text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    font-size: 1.5rem;
+    margin: 1rem 0;
 }
 
 
-h1 {
+.title {
     font-family: Vanitas, sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1;
+    letter-spacing: 3.5px;
 }
 
-h1 div {
+.title div {
+    margin: 0.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
 .photo {
+    align-self: center;
     display: block;
     width: 100%;
-    margin-bottom: 30px;
+    margin: 2rem 0 0 0;
     box-sizing: border-box;
     border: 8px solid rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.25) 0 1px 4px;
@@ -55,40 +72,158 @@ nav div {
 
 nav a {
     margin: 0 5px;
-    flex-shrink: 0;
-    flex-grow: 1;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
-nav a:hover {
+
+a:hover {
     color: #6b6e6d;
 }
 
-.poetry {
-    font-family: Breathe, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 2.1;
-    text-transform: lowercase;
-    letter-spacing: -0.1px;
-    font-size: 2.5em;
-    color: rgb(0, 0, 0);
+nav a {
+    flex-shrink: 0;
+    flex-grow: 1;
+    text-transform: uppercase;
 }
 
-.date, .our-story {
-    font-size: 2em;
+.dear-friends {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.invitation {
+    font-size: 1rem;
     margin: 1em 0;
+}
+
+
+.date {
+    margin: 4rem 0 0 0;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .and-img {
-    max-height: 8em;
+    max-height: 8rem;
+    object-fit: contain;
+    margin: 1rem 0;
+}
+
+.schedule-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.schedule-list {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+}
+.schedule-list div {
+    margin: 0.5rem;
 }
 
 .separator {
-    padding: 2em 0;
-    border-bottom: black 5px solid;
+    padding: 2rem 0;
+    border-bottom: black 3px solid;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section .sub_header {
+    font-size: 2.25rem;
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+.section_header {
+    padding: 2rem;
+    margin: 1rem 0;
+    font-size: 3rem;
+    border-bottom: black 3px solid;
+}
+
+.color-palette {
+    display: flex;
+    margin: 1rem;
+}
+
+.circle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: white 2px solid;
+    margin: 0.35rem;
+}
+
+.circle:nth-of-type(1) {
+    background: aquamarine;
+}
+
+.circle:nth-of-type(2) {
+    background: #7faaff;
+}
+
+.circle:nth-of-type(3) {
+    background: #ff7fb0;
+}
+
+
+.circle:nth-of-type(4) {
+    background: #ffee7f;
+}
+
+.circle:nth-of-type(5) {
+    background: #9bff7f;
+}
+
+ #info + .sub_header {
+    font-weight: bold;
+}
+
+
+.portrait-circle {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.portrait-circle img {
+    width: 100%;
+    height: auto;
+}
+
+.plane-departure {
+    width: 10%;
+}
+
+.plane-departure:nth-of-type(2) {
+    transform: rotateY(180grad);
+}
+
+.contacts-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact {
+    font-size: 1.75rem;
+}
+
+.contact .sub_header {
+    margin-bottom: 0;
 }
