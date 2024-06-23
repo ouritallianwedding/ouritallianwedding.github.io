@@ -17,8 +17,9 @@
 
 html {
     scroll-behavior: smooth;
-   text-size-adjust: none;
-    font-size: 50px;
+    text-size-adjust: none;
+    font-size: 60px;
+    -webkit-text-size-adjust:none;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
+    padding: 1.5rem;
 }
 
 
@@ -40,8 +41,8 @@ body {
 }
 
 .title div {
-    margin: 0.5rem;
-    font-size: 2rem;
+    margin: 0.25rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
@@ -54,10 +55,17 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0 1px 4px;
 }
 
+.photo-container {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 nav {
-    font-size: 1.25rem;
-    margin: 1rem 0;
+    font-size: 1.1rem;
+    margin-top: 0.75rem;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -101,16 +109,7 @@ a:hover {
     margin: 1rem 0;
 }
 
-
-.photo-container {
-    margin: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .schedule-list {
-    margin: 2rem;
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -154,6 +153,8 @@ a:hover {
 .color-palette {
     display: flex;
     margin: 1rem;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
 }
 
 .circle {
@@ -189,8 +190,8 @@ a:hover {
 }
 
 .portrait-circle {
-    height: 15rem;
-    width: 15rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
     overflow: hidden;
     margin: 1rem;
@@ -202,7 +203,7 @@ a:hover {
 }
 
 .plane-departure {
-    width: 10%;
+    width: 35%;
 }
 
 .plane-departure:nth-of-type(2) {
