@@ -17,21 +17,19 @@
 
 html {
     scroll-behavior: smooth;
-   /*text-size-adjust: none;*/
+   text-size-adjust: none;
+    font-size: 50px;
 }
 
 body {
     font-family: EBGaramond, sans-serif;
     text-align: center;
     margin: 0 auto;
-    max-width: 800px;
     display: flex;
     flex-direction: column;
+
 }
 
-@media (min-width: 640px) { html {font-size: 16px;} }
-@media (min-width:960px) { html {font-size: 18px;} }
-@media (min-width:1100px) { html {font-size: 18px;} }
 
 .title {
     font-family: Vanitas, sans-serif;
@@ -48,18 +46,14 @@ body {
 }
 
 .photo {
-    align-self: center;
     display: block;
-    width: 100%;
-    max-width: 800px;
+    max-width: 100%;
+    max-height: 100%;
     box-sizing: border-box;
     border: 8px solid rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.25) 0 1px 4px;
 }
 
-.initial-photo {
-    max-height: calc(100vh - 13rem);
-}
 
 nav {
     font-size: 1.25rem;
@@ -107,9 +101,16 @@ a:hover {
     margin: 1rem 0;
 }
 
-.schedule-container {
-    display: grid;
-    grid-template-columns: auto auto;
+
+.photo-container {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-villa {
+    max-height: calc(100vh - 11rem);
 }
 
 
@@ -119,6 +120,7 @@ a:hover {
     flex-direction: column;
     text-align: start;
     justify-content: space-around;
+    flex: auto;
 }
 
 .schedule-list-header {
@@ -149,7 +151,7 @@ a:hover {
 
 .section_header {
     padding: 1rem;
-    margin: 1rem 0;
+    margin-bottom: 2rem;
     font-size: 2rem;
     border-bottom: black 3px solid;
 }
@@ -217,6 +219,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .contact {
