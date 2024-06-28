@@ -38,6 +38,19 @@ body {
 .fallback-content {
     display: none;
 }
+.title {
+    font-family: Vanitas, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 3.5px;
+}
+
+.title div {
+    margin: 0.25rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
 
 
 @media (min-width: 900px) and (orientation: landscape)
@@ -56,21 +69,12 @@ body {
     body {
         font-size: 40px;
     }
+
+    .title div {
+        font-size: 1.75rem;
+    }
 }
 
-.title {
-    font-family: Vanitas, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 3.5px;
-}
-
-.title div {
-    margin: 0.25rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
 
 .photo {
     display: block;
