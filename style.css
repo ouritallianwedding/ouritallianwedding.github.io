@@ -29,7 +29,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
-    animation: fadeIn 3s ease;
 }
 
 
@@ -59,6 +58,7 @@ body {
         flex-direction: column;
         width: calc((100vh - 15rem)*1.5);
         align-self: center;
+        animation: fadeIn 3s ease;
     }
 
     .primary-content {
@@ -146,6 +146,7 @@ nav a:hover {
 
 .button_link.upload {
     margin-bottom: 1.5rem;
+    padding: 0.75rem;
 }
 
 
@@ -220,16 +221,17 @@ nav a:hover {
 .color-palette {
     display: flex;
     margin: 1rem;
-    flex-wrap: wrap-reverse;
     justify-content: center;
 }
 
 .circle {
-    width: 3rem;
-    height: 3rem;
+    width: calc((100vw - 6.4rem) / 5);
+    height: calc((100vw - 6.4rem) / 5);
+    max-height: 2rem;
+    max-width: 2rem;
     border-radius: 50%;
     border: white 2px solid;
-    margin: 0.35rem;
+    margin-right: 0.35rem;
 }
 
 .circle:nth-of-type(1) {
@@ -250,6 +252,7 @@ nav a:hover {
 
 .circle:nth-of-type(5) {
     background: rgb(24, 23, 17);
+    margin-right: 0;
 }
 
  #info + .sub_header {
@@ -257,8 +260,10 @@ nav a:hover {
 }
 
 .portrait-circle {
-    height: 9rem;
-    width: 9rem;
+    width: calc(100vw - 5rem);
+    height: calc(100vw - 5rem);
+    max-height: 9rem;
+    max-width: 9rem;
     border-radius: 50%;
     overflow: hidden;
     margin: 1rem;
@@ -290,6 +295,7 @@ nav a:hover {
     font-size: 1.25rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .contact .sub_header {
