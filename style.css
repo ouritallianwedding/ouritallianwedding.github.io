@@ -30,6 +30,7 @@ body {
     flex-direction: column;
     padding: 1rem;
     line-height: 1.5;
+    text-wrap: balance;
 }
 
 
@@ -121,12 +122,8 @@ nav a:hover {
 .button_link {
     text-decoration: none;
     padding: 0.75rem 1.5rem;
-    border-width: 2px;
     color: #000000;
-    background-position: center center;
-    border-color: #000000;
-    border-style: solid;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border: solid 2px #000000;
 }
 
 .button_link.place {
@@ -140,7 +137,7 @@ nav a:hover {
 .button_link.upload {
     margin-bottom: 1.5rem;
     padding: 0.75rem;
-    text-wrap: balance
+    width: 10rem;
 }
 
 
@@ -275,11 +272,6 @@ nav a:hover {
     padding: 0.25rem 1rem;
     margin: 1rem 0;
 }
-
-.color-palette-description {
-    text-wrap: balance;
-}
-
 
  #info + .sub_header {
     font-weight: bold;
